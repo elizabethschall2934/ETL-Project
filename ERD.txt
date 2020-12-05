@@ -1,0 +1,70 @@
+#  Create Tables
+
+CA_final
+--
+unique_id INT PK
+video_id TEXT
+trending_date VARCHAR(60) 
+title TEXT 
+channel_title TEXT 
+category_id INT FK >- Category_json.category_id
+publish_time VARCHAR(60) 
+tags TEXT 
+likes INTEGER
+dislikes INTEGER
+comment_count INTEGER
+category TEXT 
+country TEXT 
+
+GB_final
+--
+unique_id INT PK
+video_id TEXT 
+trending_date VARCHAR(60) 
+title TEXT 
+channel_title TEXT 
+category_id INT FK >- Category_json.category_id
+publish_time VARCHAR(60) 
+tags TEXT 
+likes INTEGER
+dislikes INTEGER
+comment_count INTEGER
+category TEXT 
+country TEXT 
+
+US_final
+--
+unique_id INT PK
+video_id TEXT 
+trending_date VARCHAR(60) 
+title TEXT 
+channel_title TEXT 
+category_id INT FK >- Category_json.category_id
+publish_time VARCHAR(60) 
+tags TEXT 
+likes INTEGER
+dislikes INTEGER
+comment_count INTEGER
+category TEXT 
+country TEXT 
+
+Category_json
+--
+category_id INT PK
+category TEXT 
+
+World_final
+--
+unique_id INT PK
+video_id TEXT 
+trending_date VARCHAR(60) 
+title TEXT 
+channel_title TEXT 
+category_id INT FK >- Category_json.category_id
+publish_time VARCHAR(60) 
+tags TEXT 
+likes INTEGER
+dislikes INTEGER
+comment_count INTEGER
+category TEXT 
+country TEXT 

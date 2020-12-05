@@ -1,11 +1,11 @@
--- Create Two Tables
+-- Create Tables
 
 CREATE TABLE CA_final (
 	video_id TEXT, 
 	trending_date VARCHAR(60), 
 	title TEXT, 
 	channel_title TEXT,
-	category_id INT,
+	category_id INT PRIMARY KEY,
 	publish_time VARCHAR(60), 
 	tags TEXT, 
 	views INTEGER NOT NULL, 
@@ -18,12 +18,12 @@ CREATE TABLE CA_final (
 	
 	SELECT * FROM CA_final
 	
-	CREATE TABLE GB_final (
+CREATE TABLE GB_final (
 	video_id TEXT, 
 	trending_date VARCHAR(60), 
 	title TEXT, 
 	channel_title TEXT,
-	category_id INT,
+	category_id INT PRIMARY KEY,
 	publish_time VARCHAR(60), 
 	tags TEXT, 
 	views INTEGER NOT NULL, 
@@ -42,7 +42,7 @@ CREATE TABLE US_final (
 	trending_date VARCHAR(60), 
 	title TEXT, 
 	channel_title TEXT,
-	category_id INT,
+	category_id INT PRIMARY KEY,
 	publish_time VARCHAR(60), 
 	tags TEXT, 
 	views INTEGER NOT NULL, 
@@ -62,12 +62,12 @@ CREATE TABLE Category_json (
 	
 	SELECT * FROM Category_json
 	
-	CREATE TABLE world_final (
+CREATE TABLE World_final (
 	video_id TEXT, 
 	trending_date VARCHAR(60), 
 	title TEXT, 
 	channel_title TEXT,
-	category_id INT,
+	category_id INT PRIMARY KEY,
 	publish_time VARCHAR(60), 
 	tags TEXT, 
 	views INTEGER NOT NULL, 
@@ -78,5 +78,5 @@ CREATE TABLE Category_json (
 	country TEXT
 	);
 	
-	SELECT * FROM world_final
+	SELECT * FROM World_final
 	
